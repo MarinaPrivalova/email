@@ -14,7 +14,6 @@
           <h1>Real Estate Digest</h1>
           <h2>Москва. Январь</h2>
         </div>
-        <!-- <img class="offer-img" src="./imgs/build.svg" alt="здание"> -->
       </section>
       <section class="greeting section">
         <div class="greeting-wrap">
