@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <base href="" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="format-detection" content="telephone=no">
+  <title>Главная</title>
+  <meta name="description" content="Описание" />
+  <!-- <link href="index.css" rel="stylesheet" /> -->
+  <style type="text/css">
+    @font-face {
+      font-family: "Euclid Circular A";
+      font-style: normal;
+      font-weight: 300;
+      font-display: swap;
+      src: url(vendor/fonts/EuclidCircularA-Light.woff2) format("woff2"),
+        url(vendor/fonts/EuclidCircularA-Light.woff2) format("woff");
+    }
+
+    @font-face {
+      font-family: "Euclid Circular A";
+      font-style: normal;
+      font-weight: 500;
+      font-display: swap;
+      src: url(vendor/fonts/EuclidCircularA-Medium.woff2) format("woff2"),
+        url(vendor/fonts/EuclidCircularA-Medium.woff2) format("woff");
+    }
+
+    @font-face {
+      font-family: "Euclid Circular A";
+      font-style: normal;
+      font-weight: 600;
+      font-display: swap;
+      src: url(vendor/fonts/EuclidCircularA-SemiBold.woff2) format("woff2"),
+        url(vendor/fonts/EuclidCircularA-SemiBold.woff) format("woff");
+    }
+
+    :root {
+      --main-font: "Euclid Circular A", "Arial", "Helvetica", sans-serif;
+      --main-text-color: #000;
+      --first-accent-color: #fff;
+      --second-accent-color: #eb3440;
+    }
+
+    html {
+      -webkit-text-size-adjust: 100%;
+      font-family: monospace, monospace;
+    }
+
+    * {
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+
+    img {
+      -webkit-transition: width 0.5s, height 0.5s;
+      -o-transition: width 0.5s, height 0.5s;
+      transition: width 0.5s, height 0.5s;
+    }
+
+    a {
+      text-decoration: none;
+      cursor: pointer;
+      color: var(--main-text-color);
+    }
+
+    h1,
+    h2,
+    h3 {
+      margin-top: 0;
+      font-weight: 500;
+      width: 100%;
+      line-height: 1;
+    }
+
+    h1 {
+      font-size: 40px;
+      margin: 0;
+      margin-bottom: 50px;
+    }
+
+    h2 {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+
+    .page {
+      background: #f8f9fa;
+      font-family: var(--main-font);
+      color: var(--main-text-color);
+      width: 100%;
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-font-smoothing: antialiased;
+      -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+      -moz-text-size-adjust: 100%;
+      text-rendering: optimizeLegibility;
+      margin: 0;
+      min-height: 100vh;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      position: relative;
+    }
+
+    .container {
+      max-width: 560px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 24px;
+    }
+
+    .hover-link:hover {
+      opacity: 0.8;
+    }
+
+    .section {
+      margin-bottom: 24px;
+    }
+
+    .offer {
+      width: 100%;
+      display: table;
+      background: linear-gradient(180deg, #424447 0%, black 100%), url(./imgs/build.svg);
+      color: var(--first-accent-color);
+      border-radius: 10px;
+      padding: 24px;
+      background-blend-mode: overlay;
+      background-repeat: no-repeat;
+      background-position: right bottom;
+    }
+
+    .offer-wrap {
+      max-width: 300px;
+      width: 100%;
+      display: table;
+      vertical-align: middle;
+      text-align: start;
+    }
+
+    .offer h2 {
+      margin-bottom: 0;
+    }
+
+    .logo-link {
+      margin-bottom: 27px;
+      display: flex;
+      align-items: center;
+      color: var(--first-accent-color);
+    }
+
+    .logo-link img {
+      width: 20px;
+      height: 20px;
+      margin-right: 10px;
+    }
+
+    .logo-link span {
+      font-size: 10px;
+      line-height: 12px;
+    }
+
+    .greeting span {
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 16px;
+    }
+
+    .greeting p {
+      font-size: 12px;
+      font-weight: 300;
+      line-height: 16px;
+    }
+
+    .greeting-info-main-wrap {
+      display: table;
+      justify-content: space-between;
+      width: 100%;
+      margin-top: 18px;
+    }
+
+    .greeting-info-wrap {
+      display: table;
+      width: 100%;
+    }
+
+    .greeting-info-wrap img {
+      display: table-cell;
+      vertical-align: middle;
+      width: 80px;
+      height: 80px;
+      margin-right: 20px;
+    }
+
+    .greeting-info {
+      display: table-cell;
+      vertical-align: middle;
+    }
+
+    .greeting-info p {
+      margin: 0;
+      margin-bottom: 8px;
+    }
+
+    .greeting-info p:first-of-type {
+      font-weight: 500;
+    }
+
+    .greeting-info a {
+      font-size: 12px;
+      font-weight: 300;
+      display: inline-block;
+      width: 100%;
+    }
+
+    .greeting-info-btns {
+      display: table-cell;
+      text-align: center;
+      vertical-align: middle;
+    }
+
+    .greeting-info-btns a {
+      background: var(--second-accent-color);
+      color: var(--first-accent-color);
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 50px;
+      border-radius: 20px;
+      padding: 3px 23px;
+      max-width: 160px;
+      width: 100%;
+      height: 38px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .greeting-info-btns a:first-of-type {
+      margin-bottom: 8px;
+    }
+
+    .greeting-info-btns a:first-of-type::before {
+      content: "";
+      background: url(./imgs/tg.svg) center no-repeat;
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      background-size: contain;
+      margin-right: 5px;
+    }
+
+    .greeting-info-btns a:nth-of-type(2)::before {
+      content: "";
+      background: url(./imgs/wa.svg) center no-repeat;
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      background-size: contain;
+      margin-right: 5px;
+    }
+
+    .cards-wrap {
+      display: table;
+      width: 100%;
+    }
+
+    .cards-wrap h2 {
+      display: table-row;
+    }
+
+    .cards {
+      display: table;
+      text-align: center;
+      vertical-align: middle;
+      width: 100%;
+      border-spacing: 0;
+      margin-top: 20px;
+    }
+
+    .card-wrap {
+      width: 49%;
+      display: table-cell;
+    }
+
+    .card-wrap:first-of-type {
+      padding-right: 12px;
+    }
+
+    .card {
+      background: #f0f0f0;
+      border-radius: 20px;
+      padding: 10px;
+    }
+
+    .card p {
+      margin: 0;
+      margin-bottom: 5px;
+    }
+
+    .card p:first-of-type {
+      font-size: 12px;
+      font-weight: 600;
+    }
+
+    .card p:nth-of-type(2) {
+      font-size: 10px;
+      font-weight: 500;
+    }
+
+    .card_red p:nth-of-type(2) span {
+      color: #eb3440;
+      font-size: 10px;
+      font-weight: 500;
+    }
+
+    .card p:last-of-type {
+      font-size: 10px;
+      font-weight: 300;
+      margin-bottom: 0;
+    }
+
+    .card_green p:nth-of-type(2) span {
+      color: #259647;
+      font-size: 10px;
+      font-weight: 500;
+    }
+
+    @media screen and (max-width: 520px) {
+      .greeting-info-wrap img {
+        margin-right: 10px;
+      }
+    }
+
+    @media screen and (max-width: 425px) {
+      .greeting-info-wrap {
+        display: table-cell;
+      }
+
+      .greeting-info-btns a {
+        padding: 3px 16px;
+      }
+
+      .greeting-info-wrap img {
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
+
+      .card-wrap {
+        width: 100%;
+        display: table;
+      }
+
+      .card-wrap:first-of-type {
+        margin-bottom: 10px;
+        padding-right: 0;
+      }
+    }
+  </style>
+</head>
+<body class="page">
+  <main class="main">
+    <div class="container">
+      <section class="offer section">
+        <div class="offer-wrap">
+          <a class="logo-link hover-link" href="https://brightrich.ru/" aria-label="перейти на сайт компании">
+            <img src="./imgs/logo.svg" alt="логотип компании">
+            <span>BRIGHT RICH | CORFAC INTERNATIONAL</span>
+          </a>
+          <h1>Real Estate Digest</h1>
+          <h2>Москва. Январь</h2>
+        </div>
+      </section>
+      <section class="greeting section">
+        <div class="greeting-wrap">
+          <span>Добрый день, Александр!</span>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur dignissim metus a dui pellentesque, eu condimentum enim dictum. Pellentesque ornare, metus quis gravida condimentum, orci odio sodales sapien, ut iaculis lectus massa non tellus. Nullam ultrices auctor justo quis accumsan. Duis mollis eleifend tellus, quis sodales augue elementum et. Aenean at consectetur eros.</p>
+          <div class="greeting-info-main-wrap">
+            <div class="greeting-info-wrap">
+              <img src="./imgs/man.webp" alt="мужчина">
+              <div class="greeting-info">
+                <p>Алексей Слепов</p>
+                <p>Director, W&I</p>
+                <a class="hover-link" href="tel:89992144020" aria-label="позвонить по номеру">+7 (999) 214-40-20</a>
+                <a class="hover-link" href="mailto:a.s@brightrich.moscow" aria-label="написать на почту">a.s@brightrich.moscow</a>
+              </div>
+            </div>
+            <div class="greeting-info-btns">
+              <a class="hover-link" href="https://t.me/" aria-label="написать в телеграм" target="_blank">telegram</a>
+              <a class="hover-link" href="https://wa.me/79992144020" aria-label="написать в ватсап" target="_blank">whatsapp</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="cards-wrap section">
+        <h2>Заголовок</h2>
+        <div class="cards">
+          <div class="card-wrap">
+            <div class="card card_red">
+              <p><span>237,6</span> тыс. кв. м</p>
+              <p>-5% от 2023 года <span>↓</span></p>
+              <p>объем вакантных площадей</p>
+            </div>
+          </div>
+          <div class="card-wrap">
+            <div class="card card_green">
+              <p><span>405,5</span> руб./ кв. м</p>
+              <p>+5% от 2023 года <span>↑</span></p>
+              <p>средневзвешенная арендная ставка</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+</body>
+
+</html>

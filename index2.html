@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <base href="" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <title>Главная</title>
+    <meta name="description" content="Описание" />
+    <link href="index2.css" rel="stylesheet" />
+    <style type="text/css">
+        @font-face {
+          font-family: "Euclid Circular A";
+          font-style: normal;
+          font-weight: 300;
+          font-display: swap;
+          src: url(vendor/fonts/EuclidCircularA-Light.woff2) format("woff2"),
+            url(vendor/fonts/EuclidCircularA-Light.woff2) format("woff");
+        }
+        @font-face {
+          font-family: "Euclid Circular A";
+          font-style: normal;
+          font-weight: 500;
+          font-display: swap;
+          src: url(vendor/fonts/EuclidCircularA-Medium.woff2) format("woff2"),
+            url(vendor/fonts/EuclidCircularA-Medium.woff2) format("woff");
+        }
+        @font-face {
+          font-family: "Euclid Circular A";
+          font-style: normal;
+          font-weight: 600;
+          font-display: swap;
+          src: url(vendor/fonts/EuclidCircularA-SemiBold.woff2) format("woff2"),
+            url(vendor/fonts/EuclidCircularA-SemiBold.woff) format("woff");
+        }
+        :root {
+          --main-font: "Euclid Circular A", "Arial", "Helvetica", sans-serif;
+          --main-text-color: #000;
+          --first-accent-color: #fff;
+          --second-accent-color: #eb3440;
+        }
+        html {
+          -webkit-text-size-adjust: 100%;
+          font-family: monospace, monospace;
+        }
+        * {
+          -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+        }
+        img {
+          -webkit-transition: width 0.5s, height 0.5s;
+          -o-transition: width 0.5s, height 0.5s;
+          transition: width 0.5s, height 0.5s;
+        }
+        a {
+          text-decoration: none;
+          cursor: pointer;
+          color: var(--main-text-color);
+        }
+        .hover-link:hover {
+          opacity: 0.8;
+        }
+        .section {
+          margin-bottom: 24px;
+        }
+        @media screen and (max-width: 450px) {
+        .greeting-info-table {
+          text-align: center;
+        }
+        .greeting-info-table td {
+          display: block;
+          width: 100%;
+        }
+        .greeting-info {
+          padding: 0;
+          margin: 10px 0;
+        }
+        .greeting-info-btns a {
+          margin: auto;
+        }
+        .card-wrap {
+          width: 100%;
+          display: block;
+        }
+        .card_red {
+          margin-bottom: 12px;
+          margin-right: 0;
+        }
+  }
+    </style>
+  </head>
+  <body class="page" >
+    <main class="main">
+      <div class="container">
+        <table class="offer section">
+          <tbody class="offer-wrap">
+            <tr>
+              <td>
+                <a
+                  class="logo-link hover-link"
+                  href="https://brightrich.ru/"
+                  aria-label="перейти на сайт компании"
+                >
+                  <img src="./imgs/logo.svg" alt="логотип компании" />
+                  <span>BRIGHT RICH | CORFAC INTERNATIONAL</span>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h1 font-size: 40px;
+                margin: 0;
+                margin-bottom: 50px;
+                font-weight: 500;
+                width: 100%;
+                line-height: 1;>Real Estate Digest</h1>
+                <h2 margin-top: 0;
+                font-weight: 500;
+                width: 100%;
+                line-height: 1;>Москва. Январь</h2>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table class="greeting section">
+          <tbody class="greeting-wrap">
+                <tr>
+                  <td colspan="2">
+                    <span>Добрый день, Александр!</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Curabitur dignissim metus a dui pellentesque, eu
+                      condimentum enim dictum. Pellentesque ornare, metus quis
+                      gravida condimentum, orci odio sodales sapien, ut iaculis
+                      lectus massa non tellus. Nullam ultrices auctor justo quis
+                      accumsan. Duis mollis eleifend tellus, quis sodales augue
+                      elementum et. Aenean at consectetur eros.
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <table class="greeting-info-table">
+                      <tbody>
+                        <tr>
+                          <td>
+                            <img src="./imgs/man.webp" alt="мужчина" />
+                          </td>
+                          <td class="greeting-info">
+                              <p>Алексей Слепов</p>
+                              <p>Director, W&I</p>
+                              <a
+                                class="hover-link"
+                                href="tel:89992144020"
+                                aria-label="позвонить по номеру"
+                                >+7 (999) 214-40-20</a
+                              >
+                              <a
+                                class="hover-link"
+                                href="mailto:a.s@brightrich.moscow"
+                                aria-label="написать на почту"
+                                >a.s@brightrich.moscow</a
+                              >
+                          </td>
+                          <td class="greeting-info-btns">
+                              <a
+                                class="hover-link"
+                                href="https://t.me/"
+                                aria-label="написать в телеграм"
+                                target="_blank"
+                                >telegram</a
+                              >
+                              <a
+                                class="hover-link"
+                                href="https://wa.me/79992144020"
+                                aria-label="написать в ватсап"
+                                target="_blank"
+                                >whatsapp</a
+                              >
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </tbody>
+        </table>
+            <table class="cards-wrap section">
+                <thead>
+                 <tr>
+                    <td colspan="2">
+                     <h2 margin-top: 0;
+                     font-weight: 500;
+                     width: 100%;
+                     line-height: 1;>Заголовок</h2>
+                    </td>
+                 </tr>
+                </thead>
+                <tbody>
+                 <tr>
+                    <td class="card-wrap">
+                        <div class="card card_red">
+                        <p><span>237,6</span> тыс. кв. м</p>
+                        <p>-5% от 2023 года <span>↓</span></p>
+                        <p>объем вакантных площадей</p>
+                    </div>
+                    </td>
+                    <td class="card-wrap">
+                        <div class="card card_green">
+                        <p><span>405,5</span> руб./ кв. м</p>
+                        <p>+5% от 2023 года <span>↑</span></p>
+                        <p>средневзвешенная арендная ставка</p>
+                    </div>
+                    </td>
+                 </tr>
+                </tbody>
+            </table>
+      </div>
+    </main>
+  </body>
+</html>
