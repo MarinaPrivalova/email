@@ -54,18 +54,18 @@
     width: 100%;
     line-height: 1;
   } */
-  h1 {
+  /* h1 {
     font-size: 40px;
     margin-bottom: 50px;
   }
   h2 {
     font-size: 20px;
     margin-bottom: 20px;
-  }
-  table td {
+  } */
+  /* table td {
     padding: 0;
-  }
-  .page {
+  } */
+  /* .page {
     background: #f8f9fa;
     font-family: var(--main-font);
     color: var(--main-text-color);
@@ -92,14 +92,14 @@
     width: 100%;
     margin: 0 auto;
     padding: 24px;
-  }
+  } */
  /*  .hover-link:hover {
     opacity: 0.8;
   }
   .section {
     margin-bottom: 24px;
   } */
-  .offer {
+  /* .offer {
     width: 100%;
     background: linear-gradient(180deg, #424447 0%, black 100%), url(./imgs/build.svg);
     color: var(--first-accent-color);
@@ -108,17 +108,17 @@
     background-blend-mode: overlay;
     background-repeat: no-repeat;
     background-position: right bottom;
-  }
-  .offer-wrap {
+  } */
+/*   .offer-wrap {
     max-width: 300px;
     width: 100%;
     text-align: start;
     display: block;
-  }
-  .offer h2 {
+  } */
+  /* .offer h2 {
     margin-bottom: 0;
-  }
-  .logo-link {
+  } */
+/*   .logo-link {
     margin-bottom: 27px;
     display: flex;
     align-items: center;
@@ -151,8 +151,8 @@
   .greeting-info-wrap img {
     width: 80px;
     height: 80px;
-  }
-  .greeting-info {
+  } */
+  /* .greeting-info {
     padding: 0 20px;
   }
   .greeting-info p {
@@ -187,8 +187,8 @@
   }
   .greeting-info-btns a:first-of-type {
     margin-bottom: 8px;
-  }
-  .greeting-info-btns a:first-of-type::before {
+  } */
+ /*  .greeting-info-btns a:first-of-type::before {
     content: "";
     background: url(./imgs/tg.svg) center no-repeat;
     display: inline-block;
@@ -205,21 +205,16 @@
     height: 24px;
     background-size: contain;
     margin-right: 5px;
-  }
-  .cards-wrap {
+  } */
+  /* .cards-wrap {
     width: 100%;
-  }
+  } */
   
-  .cards {
-    text-align: center;
-    width: 100%;
-    border-spacing: 0;
-    margin-top: 20px;
-  }
-  .card-wrap {
+
+  /* .card-wrap {
       width: 49%;
-  }
-  .card {
+  } */
+ /*  .card {
     background: #f0f0f0;
     border-radius: 20px;
     padding: 10px;
@@ -228,7 +223,7 @@
   .card p {
     margin: 0;
     margin-bottom: 5px;
-  }
+  } */
   .card p:first-of-type {
     font-size: 12px;
     font-weight: 600;

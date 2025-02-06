@@ -8,7 +8,6 @@
     <meta name="format-detection" content="telephone=no" />
     <title>Главная</title>
     <meta name="description" content="Описание" />
-    <link href="index2.css" rel="stylesheet" />
     <style type="text/css">
         @font-face {
           font-family: "Euclid Circular A";
@@ -58,11 +57,89 @@
           cursor: pointer;
           color: var(--main-text-color);
         }
+        table td {
+          padding: 0;
+        }
         .hover-link:hover {
           opacity: 0.8;
         }
+        .page {
+          background: #f8f9fa;
+          font-family: var(--main-font);
+          color: var(--main-text-color);
+          width: 100%;
+          -moz-osx-font-smoothing: grayscale;
+          -webkit-font-smoothing: antialiased;
+          -webkit-text-size-adjust: 100%;
+          -ms-text-size-adjust: 100%;
+          -moz-text-size-adjust: 100%;
+          text-rendering: optimizeLegibility;
+          margin: 0;
+          min-height: 100vh;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          position: relative;
+        }
+        .container {
+          max-width: 560px;
+          width: 100%;
+          margin: 0 auto;
+          padding: 24px;
+        }
         .section {
           margin-bottom: 24px;
+        }
+        .greeting-info a {
+          font-size: 12px;
+          font-weight: 300;
+          display: inline-block;
+          width: 100%;
+        }
+        .greeting-info-btns a {
+          background: var(--second-accent-color);
+          color: var(--first-accent-color);
+          text-transform: uppercase;
+          text-align: center;
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 50px;
+          border-radius: 20px;
+          padding: 3px 23px;
+          max-width: 160px;
+          width: 100%;
+          height: 38px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+        .greeting-info-btns a:first-of-type::before {
+          content: "";
+          background: url(./imgs/tg.svg) center no-repeat;
+          display: inline-block;
+          width: 24px;
+          height: 24px;
+          background-size: contain;
+          margin-right: 5px;
+        }
+        .greeting-info-btns a:nth-of-type(2)::before {
+          content: "";
+          background: url(./imgs/wa.svg) center no-repeat;
+          display: inline-block;
+          width: 24px;
+          height: 24px;
+          background-size: contain;
+          margin-right: 5px;
+        }
+        .card {
+          background: #f0f0f0;
+          border-radius: 20px;
+          padding: 10px;
+          text-align: center;
         }
         @media screen and (max-width: 450px) {
         .greeting-info-table {
@@ -80,12 +157,12 @@
           margin: auto;
         }
         .card-wrap {
-          width: 100%;
-          display: block;
+          width: 100% !important;
+          display: block !important;
         }
         .card_red {
           margin-bottom: 12px;
-          margin-right: 0;
+          margin-right: 0 !important;
         }
   }
     </style>
@@ -93,32 +170,49 @@
   <body class="page" >
     <main class="main">
       <div class="container">
-        <table class="offer section">
-          <tbody class="offer-wrap">
+        <table class="offer section" style="width: 100%;
+        background: linear-gradient(180deg, #424447 0%, black 100%), url(./imgs/build.svg);
+        color: var(--first-accent-color);
+        border-radius: 10px;
+        padding: 24px;
+        background-blend-mode: overlay;
+        background-repeat: no-repeat;
+        background-position: right bottom;">
+          <tbody class="offer-wrap" style=" max-width: 300px;
+          width: 100%;
+          text-align: start;
+          display: block;">
             <tr>
               <td>
                 <a
                   class="logo-link hover-link"
                   href="https://brightrich.ru/"
                   aria-label="перейти на сайт компании"
+                  style="margin-bottom: 27px;
+                  display: flex;
+                  align-items: center;
+                  color: var(--first-accent-color);"
                 >
-                  <img src="./imgs/logo.svg" alt="логотип компании" />
-                  <span>BRIGHT RICH | CORFAC INTERNATIONAL</span>
+                  <img src="./imgs/logo.svg" alt="логотип компании" style="width: 20px;
+                  height: 20px;
+                  margin-right: 10px;"/>
+                  <span style="font-size: 10px;
+                  line-height: 12px;">BRIGHT RICH | CORFAC INTERNATIONAL</span>
                 </a>
               </td>
             </tr>
             <tr>
               <td>
-                <h1 font-size: 40px;
+                <h1 style="font-size: 40px;
                 margin: 0;
                 margin-bottom: 50px;
                 font-weight: 500;
                 width: 100%;
-                line-height: 1;>Real Estate Digest</h1>
-                <h2 margin-top: 0;
+                line-height: 1;">Real Estate Digest</h1>
+                <h2 style="margin: 0; font-size: 20px;
                 font-weight: 500;
                 width: 100%;
-                line-height: 1;>Москва. Январь</h2>
+                line-height: 1;">Москва. Январь</h2>
               </td>
             </tr>
           </tbody>
@@ -128,12 +222,16 @@
           <tbody class="greeting-wrap">
                 <tr>
                   <td colspan="2">
-                    <span>Добрый день, Александр!</span>
+                    <span style="font-size: 16px;
+                    font-weight: 500;
+                    line-height: 16px;">Добрый день, Александр!</span>
                   </td>
                 </tr>
                 <tr>
                   <td colspan="2">
-                    <p>
+                    <p style="font-size: 12px;
+                    font-weight: 300;
+                    line-height: 16px;">
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                       Curabitur dignissim metus a dui pellentesque, eu
                       condimentum enim dictum. Pellentesque ornare, metus quis
@@ -146,15 +244,19 @@
                 </tr>
                 <tr>
                   <td colspan="2">
-                    <table class="greeting-info-table">
+                    <table class="greeting-info-table" style="margin-top: 6px;
+                    width: 100%;">
                       <tbody>
                         <tr>
                           <td>
-                            <img src="./imgs/man.webp" alt="мужчина" />
+                            <img src="./imgs/man.webp" alt="мужчина" style="width: 80px;
+                              height: 80px;"/>
                           </td>
-                          <td class="greeting-info">
-                              <p>Алексей Слепов</p>
-                              <p>Director, W&I</p>
+                          <td class="greeting-info" style="padding: 0 20px;">
+                              <p style="margin: 0;
+                                margin-bottom: 8px; font-weight: 500;">Алексей Слепов</p>
+                              <p style="margin: 0;
+                                margin-bottom: 8px;">Director, W&I</p>
                               <a
                                 class="hover-link"
                                 href="tel:89992144020"
@@ -173,7 +275,7 @@
                                 class="hover-link"
                                 href="https://t.me/"
                                 aria-label="написать в телеграм"
-                                target="_blank"
+                                target="_blank" style="margin-bottom: 8px;"
                                 >telegram</a
                               >
                               <a
@@ -193,7 +295,7 @@
             </table>
           </tbody>
         </table>
-            <table class="cards-wrap section">
+            <table class="cards-wrap section" style="width: 100%;">
                 <thead>
                  <tr>
                     <td colspan="2">
@@ -206,18 +308,34 @@
                 </thead>
                 <tbody>
                  <tr>
-                    <td class="card-wrap">
-                        <div class="card card_red">
-                        <p><span>237,6</span> тыс. кв. м</p>
-                        <p>-5% от 2023 года <span>↓</span></p>
-                        <p>объем вакантных площадей</p>
+                    <td class="card-wrap" style="width: 49%;">
+                        <div class="card card_red" style="margin-right: 12px;">
+                        <p style="margin: 0;
+                          margin-bottom: 5px; font-size: 12px; font-weight: 600;"><span style="font-size: 22px; font-weight: 600;">237,6</span> тыс. кв. м</p>
+                        <p style="margin: 0;
+                          margin-bottom: 5px; font-size: 10px;
+                          font-weight: 500;">-5% от 2023 года <span style="color: #eb3440;
+                          font-size: 10px;
+                          font-weight: 500;">↓</span></p>
+                        <p style="margin: 0;
+                          margin-bottom: 0; font-size: 10px;
+                          font-weight: 300;"
+                        >объем вакантных площадей</p>
                     </div>
                     </td>
-                    <td class="card-wrap">
+                    <td class="card-wrap" style="width: 49%;">
                         <div class="card card_green">
-                        <p><span>405,5</span> руб./ кв. м</p>
-                        <p>+5% от 2023 года <span>↑</span></p>
-                        <p>средневзвешенная арендная ставка</p>
+                        <p style="margin: 0;
+                          margin-bottom: 5px; font-size: 12px; font-weight: 600;"><span style="font-size: 22px; font-weight: 600;">405,5</span> руб./ кв. м</p>
+                        <p style="margin: 0;
+                          margin-bottom: 5px; font-size: 10px;
+                          font-weight: 500;">+5% от 2023 года <span style="color: #259647;
+                          font-size: 10px;
+                          font-weight: 500;">↑</span></p>
+                        <p style="margin: 0;
+                        font-size: 10px;
+                        font-weight: 300;
+                        margin-bottom: 0;">средневзвешенная арендная ставка</p>
                     </div>
                     </td>
                  </tr>
