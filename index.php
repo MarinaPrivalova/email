@@ -14,6 +14,7 @@
           <h1>Real Estate Digest</h1>
           <h2>Москва. Январь</h2>
         </div>
+        <!-- <img class="offer-img" src="./imgs/build.svg" alt="здание"> -->
       </section>
       <section class="greeting section">
         <div class="greeting-wrap">
@@ -39,15 +40,19 @@
       <section class="cards-wrap section">
         <h2>Заголовок</h2>
         <div class="cards">
-          <div class="card card_red">
-            <p><span>237,6</span> тыс. кв. м</p>
-            <p>-5% от 2023 года <span>↓</span></p>
-            <p>объем вакантных площадей</p>
+          <div class="card-wrap">
+            <div class="card card_red">
+              <p><span>237,6</span> тыс. кв. м</p>
+              <p>-5% от 2023 года <span>↓</span></p>
+              <p>объем вакантных площадей</p>
+            </div>
           </div>
-          <div class="card card_green">
-            <p><span>405,5</span> руб./ кв. м</p>
-            <p>+5% от 2023 года <span>↑</span></p>
-            <p>средневзвешенная арендная ставка</p>
+          <div class="card-wrap">
+            <div class="card card_green">
+              <p><span>405,5</span> руб./ кв. м</p>
+              <p>+5% от 2023 года <span>↑</span></p>
+              <p>средневзвешенная арендная ставка</p>
+            </div>
           </div>
         </div>
       </section>
