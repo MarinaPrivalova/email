@@ -8,7 +8,7 @@
       <section class="offer section">
         <div class="offer-wrap">
           <a class="logo-link hover-link" href="https://brightrich.ru/" aria-label="перейти на сайт компании">
-            <img src="./imgs/logo.svg" alt="логотип компании" loading="lazy">
+            <img src="./imgs/logo.svg" alt="логотип компании">
             <span>BRIGHT RICH | CORFAC INTERNATIONAL</span>
           </a>
           <h1>Real Estate Digest</h1>
@@ -21,7 +21,7 @@
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur dignissim metus a dui pellentesque, eu condimentum enim dictum. Pellentesque ornare, metus quis gravida condimentum, orci odio sodales sapien, ut iaculis lectus massa non tellus. Nullam ultrices auctor justo quis accumsan. Duis mollis eleifend tellus, quis sodales augue elementum et. Aenean at consectetur eros.</p>
           <div class="greeting-info-main-wrap">
             <div class="greeting-info-wrap">
-              <img src="./imgs/man.webp" alt="мужчина" loading="lazy">
+              <img src="./imgs/man.webp" alt="мужчина">
               <div class="greeting-info">
                 <p>Алексей Слепов</p>
                 <p>Director, W&I</p>
